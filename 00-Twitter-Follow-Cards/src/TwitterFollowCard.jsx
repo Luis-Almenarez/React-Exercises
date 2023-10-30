@@ -4,7 +4,9 @@ export function TwitterFollowCard({ userName, name, initialIsFollowing }) {
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
 
   const text = isFollowing ? "Siguiendo" : "Seguir";
-  const buttonClassName = isFollowing ? "tw-followCard-button is-following" : "tw-followCard-button";
+  const buttonClassName = isFollowing
+    ? "tw-followCard-button is-following"
+    : "tw-followCard-button";
   const handleClick = () => {
     setIsFollowing(!isFollowing);
   };
@@ -12,7 +14,11 @@ export function TwitterFollowCard({ userName, name, initialIsFollowing }) {
   return (
     <article className="tw-followCard">
       <header className="tw-followCard-header">
-        <img className="tw-followCard-avatar" src={`https://unavatar.io/${userName}`} alt="Avatar" />
+        <img
+          className="tw-followCard-avatar"
+          src={`https://unavatar.io/${userName}`}
+          alt="Avatar"
+        />
         <div className="tw-followCard-info">
           <strong>{name}</strong>
           <span className="tw-followCard-infoUsername">@{userName}</span>
