@@ -1,2 +1,2 @@
 # React-Exercises
-Exercises with React and JavaScript.
+- Exercises with React and JavaScript.
