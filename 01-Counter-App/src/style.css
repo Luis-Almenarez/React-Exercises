@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 16px */
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  background-color: #21232a;
+  color: #fff;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+button {
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: all 500ms;
+}
+
+button:hover {
+  background-color: #0b0014;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 2px 5px;
+  color: white;
+}
