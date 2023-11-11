@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { AddCategory } from "./Components/AddCategory";
-import { GifGrid } from "./Components/GifGrid";
+import { AddCategory, GifGrid } from "./Components";
 
 export const GifApp = () => {
-  const [categories, setCategories] = useState(["Dragón Ball"]);
+  const [categories, setCategories] = useState([]);
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
@@ -11,7 +10,7 @@ export const GifApp = () => {
   };
   return (
     <>
-      <h1>GifApp</h1>
+      <h1 className="text-center text-4xl font-bold m-2">Gif-App</h1>
       <AddCategory
         onNewCategory={onAddCategory}
         setCategories={setCategories}

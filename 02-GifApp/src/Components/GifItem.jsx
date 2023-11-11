@@ -1,8 +1,8 @@
 export const GifItem = ({ title, url, id }) => {
   return (
-    <div className="card">
-      <img src={url} alt={title} />
-      <p>{title}</p>
+    <div className="card grid place-items-center bg-white text-black font-bold rounded-lg overflow-hidden">
+      <img className="w-full" src={url} alt={title} />
+      <p className="bg-white text-sm m-1 font-bold p-1">{title}</p>
     </div>
   );
 };
