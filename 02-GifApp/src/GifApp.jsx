@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AddCategory, GifGrid } from "./Components";
+import { Footer } from "./Components/Footer";
 
 export const GifApp = () => {
   const [categories, setCategories] = useState([]);
@@ -26,6 +27,7 @@ export const GifApp = () => {
       {categories.map((category) => (
         <GifGrid key={category} category={category} />
       ))}
+      <Footer />
     </>
   );
 };

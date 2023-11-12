@@ -23,7 +23,7 @@ export const AddCategory = ({ onNewCategory, clearCategory }) => {
         className="grid place-items-center border-none outline-none"
         onSubmit={onSubmit}>
         <input
-          className="w-3/6 bg-white text-black rounded-lg border-none text-lg font-bold  p-2 m-2"
+          className="w-3/6 bg-white text-black rounded-lg border-none text-lg font-bold pl-3 p-2 m-2"
           type="text"
           placeholder="Search Gif"
           value={inputValue}
