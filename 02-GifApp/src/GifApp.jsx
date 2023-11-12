@@ -16,7 +16,7 @@ export const GifApp = () => {
 
   return (
     <>
-      <h1 className="text-center text-4xl font-bold m-2">Gif-App</h1>
+      <h1 className="text-center text-4xl font-bold mb-4 p-2">Gif-App</h1>
 
       <AddCategory
         onNewCategory={onAddCategory}

@@ -6,13 +6,17 @@ export const GifGrid = ({ category }) => {
 
   return (
     <>
-      <h3 className="font-bold pt-8 p-0">{category}</h3>
+      <h3 className="font-bold pt-8 pb-8 p-0">{category}</h3>
       {isLoading && <h2 className="text-4xl font-bold m-5">Searching...</h2>}
-      <div className="grid grid-cols-1 grid-rows-5 gap-4 md:grid-cols-2 place-items-center">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center w-full">
         {images.map((image) => (
-          <GifItem key={image.id} {...image} />
+          <div
+            key={image.id}
+            className="grid w-full h-56 transition-all hover:scale-105">
+            <GifItem {...image} />
+          </div>
         ))}
-      </div>
+      </section>
     </>
   );
 };

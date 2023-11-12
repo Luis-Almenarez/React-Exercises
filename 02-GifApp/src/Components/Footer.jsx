@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="w-full flex gap-1 justify-center font-mono italic">
+    <footer className="w-full flex pt-10 gap-1 justify-center font-mono italic">
       <p className="text-sm font-bold">Created for ©</p>
       <a
         className="text-sm font-bold transition-all hover:text-indigo-600"
