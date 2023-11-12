@@ -8,12 +8,19 @@ export const GifApp = () => {
     if (categories.includes(newCategory)) return;
     setCategories([newCategory, ...categories]);
   };
+
+  const clearCategory = () => {
+    setCategories([""]);
+  };
+
   return (
     <>
       <h1 className="text-center text-4xl font-bold m-2">Gif-App</h1>
+
       <AddCategory
         onNewCategory={onAddCategory}
         setCategories={setCategories}
+        clearCategory={clearCategory}
       />
 
       {categories.map((category) => (
