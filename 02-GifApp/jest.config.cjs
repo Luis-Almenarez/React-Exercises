@@ -1,4 +1,6 @@
+const path = require("path");
+
 module.exports = {
   testEnvironment: "jest-environment-jsdom",
-  setupFiles: ["./jest.setup.cjs"],
+  setupFiles: [path.resolve(__dirname, "./jest.setup.js")],
 };
