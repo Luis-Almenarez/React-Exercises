@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "./Button";
 import { MagicMotion } from "react-magic-motion";
+import PropTypes from "prop-types";
 
 export const AddCategory = ({ onNewCategory, clearCategory }) => {
   const [inputValue, setInputValue] = useState("");
@@ -40,4 +41,8 @@ export const AddCategory = ({ onNewCategory, clearCategory }) => {
       </MagicMotion>
     </>
   );
+};
+
+AddCategory.propTypes = {
+  onNewCategory: PropTypes.func.isRequired,
 };
