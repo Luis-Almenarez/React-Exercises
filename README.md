@@ -54,7 +54,7 @@ Puedes ver una vista previa [aquí](https://gifloom.netlify.app/).
 - [LinkedIn](https://www.linkedin.com/in/luisalmenarez/)
 
 
-## Contribuir
+## Contribuir!
 
 Siéntete libre de contribuir, ya sea reportando problemas, sugiriendo mejoras o agregando nuevas funcionalidades. ¡Toda contribución es bienvenida!
 
