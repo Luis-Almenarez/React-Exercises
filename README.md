@@ -1,6 +1,6 @@
 # React Exercises
 
-Este repositorio contiene tres ejercicios simples en React para practicar y aprender los conceptos básicos.
+Este repositorio contiene ejercicios simples en React para practicar y aprender los conceptos básicos.
 
 ## Tecnologías Utilizadas
 ![HTML](https://img.shields.io/badge/-HTML-ff4500?style=flat&logo=html5&logoColor=white)
